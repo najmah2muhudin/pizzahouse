@@ -4,21 +4,60 @@ function pizza(size, crust, toppings){
    this.toppings = toppings;
 }
 
-    function total(){
+function total(){
        var nSize = document.getElementById("size").value;
-       var nCrust = document.getElementById("crust").value;
-       var nToppings = document.getElementById("toppings").value;
-      var price;
-      var tPrice;
+       //var nCrust = document.getElementById("crust").value;
+       var ntoppings = document.getElementById("toppings").value;
+       var number = document.getElementById("numero").value;
+       var deliver = document.getElementById("deliver").checked;
+       var location;
 
-       if(nSize ==large){
-         price = 1000;
-         
-       } else if (nSize == medium){
-          price = 800;
-       } else{
-          price = 500;
+       if (deliver === true){
+         location = prompt("Where do you live ?");
        }
 
+      var price;
+      var tprice;
+      
+      if(nSize =="large"){
+         price = 1000;
+         if(ntoppings == "extra cheese"){
+            price += 100;
+            tprice = price * number;
+         } else if(ntoppings == "pepperoni"){
+            price += 50;
+            tprice = price* number;
+         } else {
+            price += 150;
+            tprice = price*number;
+         }
+         
+       } else if (nSize == "medium"){
+          price = 800;
+          if(ntoppings == "extra cheese"){
+            price += 100;
+            tprice = price * number;
+         } else if(ntoppings == "pepperoni"){
+            price += 50;
+            tprice = price* number;
+         } else {
+            price += 150;
+            tprice = price*number;
+         }
+
+       } else{
+          price = 500;
+          if(ntoppings == "extra cheese"){
+            price += 100;
+            tprice = price * number;
+         } else if(ntoppings == "pepperoni"){
+            price += 50;
+            tprice = price* number;
+         } else {
+            price += 150;
+            tprice = price*number;
+         }
+       }
+     document.getElementById("demo").innerHTML = tprice + " KSh";
       
     }
