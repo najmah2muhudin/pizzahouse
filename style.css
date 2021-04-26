@@ -1,0 +1,25 @@
+body{
+    background-image: url("/download.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#color{
+    background-color: rgb(204, 195, 195);
+    justify-content: space-evenly;
+    color:black;
+    height: 500px;
+    padding-bottom: 2rem;
+    margin-top: 5rem;
+
+    
+}
+#front{
+    background-color: rgb(204, 195, 195);
+    text-align: center;
+    color: black;
+    height: 300;
+    margin: 10rem;
+    width: 600px;
+}
