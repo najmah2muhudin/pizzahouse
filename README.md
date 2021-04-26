@@ -1,5 +1,5 @@
 # My-Project
-Project is a pizza delivery app
+Project is a pizza delivery app that displays the type, size, and the price of the pizza
 ## Prerequisites
 Basic Git knowledge, including an installed version of Git.
 ##### Technologies Used
