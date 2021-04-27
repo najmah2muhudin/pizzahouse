@@ -6,14 +6,14 @@ function pizza(size, crust, toppings){
 
 function total(){
        var nSize = document.getElementById("size").value;
-       //var nCrust = document.getElementById("crust").value;
+       var nCrust = document.getElementById("crust").value;
        var ntoppings = document.getElementById("toppings").value;
        var number = document.getElementById("numero").value;
        var deliver = document.getElementById("deliver").checked;
        var location;
 
        if (deliver === true){
-         location = prompt("Where do you live ?");
+         location = prompt("Where do you stay?");
        }
 
       var price;
